@@ -1,0 +1,18 @@
+server:
+  port: 8902
+
+spring:
+  application:
+    name: question-test-admin
+
+#eureka:
+#  client:
+#    fetch-registry: true   # 是否从其他eureka服务获取服务信息，当前只有一个eureka，所以为false
+#    register-with-eureka: true # 是否注册到eureka
+#    service-url:
+#      defaultZone: http://localhost:8901/eureka/  # 指定服务端地址
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8901/eureka/
